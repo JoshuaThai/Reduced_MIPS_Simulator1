@@ -20,11 +20,7 @@ public class Instructions {
         binary = String.format("%32s", binary).replace(' ', '0');
 
         this.machineCode = binary;
-        //System.out.println(machineCode);
         getOpCode(); // We are going to use the opcode to determine what we will have to do.
-        /*getRegisters();
-        getShamt();
-        getFunct();*/
     }
 
     //opcode will help us figure out which type of instruction.

@@ -28,7 +28,6 @@ public class jType extends Instructions{
         if(opcode.length() == 1) {
             opcode = "0" + opcode;
         }
-        //System.out.println("Opcode: " + opcode);
     }
 
     private void getIndex(){
@@ -40,16 +39,10 @@ public class jType extends Instructions{
         //Convert decimal to hex.
         index = Integer.toHexString(ans);
         for(int i = 0; i < 7 - index.length(); i++){
-            //if(index.length() == 7) break;
-            //this.index = "0" + this.index;
             result.append("0");
         }
         result.append(index);
         index = result.toString();
-        /*if(index.length() != 7){ //extra check to make sure index is really 7 digits.
-            this.index = "0" + this.index;
-        }*/
-        //System.out.println("Opcode: " + opcode);
     }
 
     private void getMnemonic(){

@@ -4,7 +4,6 @@
     This is the first milestone for the second program in my Computer Architecture class during my junior year
     at the University of Wisconsin - Milwaukee. For this milestone, we will take the MIPS machine code instructions
     and simulate the internal workings of a MIPS processor using a single-cycle datapath. We will enter the
-
  */
 public class Main {
     public static void main(String[] args) {

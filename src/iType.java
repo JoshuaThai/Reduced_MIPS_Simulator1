@@ -32,7 +32,6 @@ public class iType extends Instructions{
         if(opcode.length() == 1) {
             opcode = "0" + opcode;
         }
-        //System.out.println("Opcode: " + opcode);
     }
 
     //RULE: Hexadecimal at mimimum should be length of 2.
@@ -57,9 +56,6 @@ public class iType extends Instructions{
         if(rt.length() == 1) {
             rt = "0" + rt;
         }
-
-        //System.out.println("RS: " + rs);
-        //System.out.println("RT: " + rt);
     }
 
     private void getImmediate(){

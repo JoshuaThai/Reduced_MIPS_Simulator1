@@ -38,7 +38,6 @@ public class rType extends Instructions{
         if(opcode.length() == 1) {
             opcode = "0" + opcode;
         }
-        //System.out.println("Opcode: " + opcode);
     }
 
 
@@ -58,7 +57,6 @@ public class rType extends Instructions{
         //Binary to decimal Conversion
         temp = this.rt;
         ans = Integer.parseInt(temp, 2);
-        //rs = Integer.toString(ans);
         //Convert decimal to hex.
         rt = Integer.toHexString(ans);
         if(rt.length() == 1) {
@@ -74,10 +72,6 @@ public class rType extends Instructions{
         if(rd.length() == 1) {
             rd = "0" + rd;
         }
-
-        //System.out.println("RS: " + rs);
-        //System.out.println("RT: " + rt);
-        //System.out.println("RD: " + rd);
     }
 
     private void getShamt(){
@@ -90,7 +84,6 @@ public class rType extends Instructions{
         if(shmt.length() == 1) {
             shmt = "0" + shmt;
         }
-        //System.out.println("shmt: " + shmt);
     }
 
     private void getFunct(){
@@ -98,13 +91,11 @@ public class rType extends Instructions{
         //Binary to decimal Conversion
         temp = this.funct;
         ans = Integer.parseInt(temp, 2);
-        //rs = Integer.toString(ans);
         //Convert decimal to hex.
         funct = Integer.toHexString(ans);
         if(funct.length() == 1) {
             funct = "0" + funct;
         }
-        //System.out.println("funct: " + funct);
     }
 
     //We will use funct to determine mnemonics
@@ -128,7 +119,6 @@ public class rType extends Instructions{
 
     public String toString(){
         return this.mnemonic + " {opcode: " + opcode + ", rs: " + rs + ", rt: " + rt + ", rd: " + rd + ", shmt: " + shmt +", funct: "+ funct + "}";
-        //Machine code in r type: " + this.machineCode;
     }
 
 }
